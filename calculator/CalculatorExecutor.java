@@ -13,9 +13,9 @@ public class CalculatorExecutor {
         double num2 = input.nextDouble();
 
         System.out.println("Rezultatele operațiilor:");
-        System.out.println(num1 + " + " + num2 + " = " + Calculator.add(num1, num2));
-        System.out.println(num1 + " - " + num2 + " = " + Calculator.scad(num1, num2));
-        System.out.println(num1 + " * " + num2 + " = " + Calculator.multiply(num1, num2));
-        System.out.println(num1 + " / " + num2 + " = " + Calculator.divide(num1, num2));
+        Calculator.printResult(num1,num2,'+',Calculator.add(num1, num2));
+        Calculator.printResult(num1,num2,'-',Calculator.subtract(num1, num2));
+        Calculator.printResult(num1,num2,'*',Calculator.multiply(num1, num2));
+        Calculator.printResult(num1,num2,'/',Calculator.divide(num1, num2));
     }
 }
